@@ -8,7 +8,7 @@ def GetInfo(SESSDATA):
     headers={
         'cookie': cookie,
         'Host': 'api.bilibili.com',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4482.0 Safari/537.36 Edg/92.0.874.0'
     }
     info=r.get(url,headers=headers)
     info_loads=js.loads(info.text)
