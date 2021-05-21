@@ -9,7 +9,7 @@ def Apply(sessdata,csrf):
     headers={
         'cookie': 'SESSDATA={}'.format(sessdata),
         'Host': 'api.bilibili.com',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4482.0 Safari/537.36 Edg/92.0.874.0'
     }
     result=js.loads(r.get(checkurl,headers=headers).text)
     blocked,cert,level,rule=result['data']['blocked'],result['data']['cert'],result['data']['level'],result['data']['rule']
@@ -19,7 +19,7 @@ def Apply(sessdata,csrf):
     headers={
         'cookie': 'bili_jct={}; SESSDATA={}'.format(csrf,sessdata),
         'Host': 'api.bilibili.com',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4482.0 Safari/537.36 Edg/92.0.874.0'
     }
     params={
         'csrf': csrf
